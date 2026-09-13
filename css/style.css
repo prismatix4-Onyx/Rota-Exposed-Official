@@ -295,7 +295,17 @@ h1, h2, h3, h4, .font-display {
   width: 100%;
   background: var(--text-dark);
   border-radius: 2px;
-  transition: transform var(--transition-fast);
+  transition: transform var(--transition-fast), opacity var(--transition-fast);
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.nav-toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 /* ==========================================================================
@@ -1426,7 +1436,10 @@ body.motion-ready .section.is-visible .action-card:nth-child(4) { animation-dela
   }
 
   .nav-links {
-    display: none;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
     position: absolute;
     top: 100%;
     left: 0;
@@ -1438,10 +1451,13 @@ body.motion-ready .section.is-visible .action-card:nth-child(4) { animation-dela
     gap: 12px;
     z-index: 99;
     box-shadow: 0 4px 0 rgba(20, 20, 20, 0.12);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 
   .nav-links.is-open {
-    display: flex;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
   }
 
   .nav-links a {
@@ -1558,6 +1574,7 @@ body.motion-ready .section.is-visible .action-card:nth-child(4) { animation-dela
   .scenario-btn {
     min-height: 58px;
     padding: 15px;
+    height: auto;
   }
 
   /* The compact header leaves room for the menu and the brand on phone screens. */
@@ -1700,7 +1717,11 @@ body.motion-ready .section.is-visible .action-card:nth-child(4) { animation-dela
   }
 
   .wheel-label {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
+    white-space: normal;
+    text-align: center;
+    max-width: 60px;
+    line-height: 1.1;
   }
 }
 

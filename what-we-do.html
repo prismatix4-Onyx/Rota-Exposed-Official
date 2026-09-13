@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#141414">
+  <meta name="description" content="ROTA EXPOSED Side 2: Unlock project stories and discover Rotaract impact through interactive cards.">
+  <title>Unlock Our Impact | ROTA EXPOSED (Side 2)</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/data.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body data-page="work">
+
+  <!-- SITE HEADER -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="ROTA EXPOSED home">
+        <span class="brand-mark">R</span>
+        <span>
+          <strong class="brand-name">ROTA EXPOSED</strong>
+          <small class="brand-subtitle">UNFILTERED SIDE OF ROTARACT</small>
+        </span>
+      </a>
+
+      <div class="discovery-status" aria-label="Discovery progress">
+        <span>DISCOVERY</span>
+        <div class="progress-dots" data-progress-dots></div>
+        <b data-progress-count>2 / 4</b>
+      </div>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links">
+        <a href="index.html">Discover</a>
+        <a href="what-we-do.html" aria-current="page">Impact</a>
+        <a href="our-club.html">People</a>
+        <a href="connect.html">Connect</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO: UNLOCK IMPACT -->
+    <section class="section container">
+      <span class="sticker-badge lime">SIDE 2 / IMPACT DISCOVERY</span>
+      <h1 class="section-heading" style="margin-top: 16px;">CAN YOU<br><span>UNLOCK</span><br>THEM ALL?</h1>
+      <p class="hero-copy">Every project starts with an idea. Tap cards below to unlock real stories behind our student projects.</p>
+    </section>
+
+    <!-- 3D PROJECT UNLOCK GRID -->
+    <section class="section container">
+      <div class="unlock-header">
+        <div>
+          <div class="section-label">PROJECT UNLOCK MATRIX</div>
+          <h2 class="section-heading" style="font-size: 2.2rem; margin-bottom: 0;">SIX STORIES.<br><span>ONE TEAM.</span></h2>
+        </div>
+        <div class="unlock-counter-badge">
+          UNLOCKED: <span data-project-count>0 / 6</span>
+        </div>
+      </div>
+
+      <div class="unlock-grid" data-project-grid></div>
+    </section>
+
+    <!-- SCAVENGER HUNT HOTSPOT SECTION -->
+    <section class="section container">
+      <div class="hunt-card">
+        <span class="sticker-badge orange">BONUS CHALLENGE • SCAVENGER HUNT</span>
+        <h2 class="section-heading" style="margin-top: 14px;">FIND THE HIDDEN<br><span>ROTARACT PIN.</span></h2>
+        <p class="mag-caption">There's a secret pin hidden in our fellowship photo. Tap to reveal!</p>
+
+        <div class="hunt-image-wrapper" data-hunt-wrapper>
+          <img src="images/project_fellowship.png" alt="Rotaract fellowship gathering">
+          
+          <!-- REAL ROTARACT PIN EMBLEM -->
+          <button class="hotspot-pin" type="button" data-hotspot aria-label="Find hidden Rotaract Pin">
+            <svg class="rotaract-pin-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Outer gear wheel background -->
+              <circle cx="50" cy="50" r="47" fill="#E11D48" stroke="#FFFFFF" stroke-width="4"/>
+              <!-- Gear cogs teeth -->
+              <path d="M50 1 L54 9 L46 9 Z M50 99 L54 91 L46 91 Z M1 50 L9 54 L9 46 Z M99 50 L91 54 L91 46 Z M15 15 L23 19 L19 24 Z M85 85 L77 81 L81 76 Z M15 85 L23 81 L19 76 Z M85 15 L77 19 L81 24 Z" fill="#FFD700"/>
+              <!-- Inner ring -->
+              <circle cx="50" cy="50" r="37" fill="#881337" stroke="#FBBF24" stroke-width="2"/>
+              <!-- Inner hub circle -->
+              <circle cx="50" cy="50" r="28" fill="#0F172A" stroke="#F59E0B" stroke-width="2"/>
+              <!-- Wheel spokes -->
+              <line x1="50" y1="22" x2="50" y2="78" stroke="#FBBF24" stroke-width="3.5"/>
+              <line x1="22" y1="50" x2="78" y2="50" stroke="#FBBF24" stroke-width="3.5"/>
+              <line x1="30" y1="30" x2="70" y2="70" stroke="#FBBF24" stroke-width="3.5"/>
+              <line x1="30" y1="70" x2="70" y2="30" stroke="#FBBF24" stroke-width="3.5"/>
+              <!-- Center Rotaract emblem dot -->
+              <circle cx="50" cy="50" r="12" fill="#E11D48" stroke="#FFFFFF" stroke-width="2"/>
+              <circle cx="50" cy="50" r="5" fill="#FFFFFF"/>
+            </svg>
+            <span class="pin-radar-ring"></span>
+          </button>
+
+          <!-- DYNAMIC MOUSE / TOUCH CHASER SCOPE -->
+          <div class="mouse-chaser" data-chaser aria-hidden="true">
+            <div class="chaser-crosshair"></div>
+            <span class="chaser-label" data-chaser-label>RADAR: SEARCHING...</span>
+          </div>
+        </div>
+
+        <div class="bonus-result" data-bonus-result hidden>
+          <strong>🎉 YOU FOUND THE ROTARACT PIN!</strong>
+          <p style="margin-top: 4px;">Rotaract brings students together beyond academics to build lifelong friendships and community impact.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TURN THE PAGE -->
+    <section class="section container">
+      <div style="background: var(--bg-paper); border: var(--border-editorial); border-radius: 28px; padding: 40px; text-align: center; box-shadow: var(--shadow-editorial);">
+        <span class="sticker-badge blue">IMPACT — COMPLETE</span>
+        <h2 class="section-heading" style="margin-top: 16px;">WHO MAKES<br><span>IT HAPPEN?</span></h2>
+        <a class="primary-btn" href="our-club.html">MEET THE PEOPLE <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <strong class="brand-name">ROTA EXPOSED</strong>
+      <p>Rotaract Club of Sri Shakthi Institute of Engineering and Technology, Coimbatore</p>
+    </div>
+  </footer>
+
+</body>
+</html>

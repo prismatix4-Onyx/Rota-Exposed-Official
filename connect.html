@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#141414">
+  <meta name="description" content="ROTA EXPOSED Side 4: Submit your idea, spin the Rotaract action wheel, and start your journey.">
+  <title>Your Turn | ROTA EXPOSED (Side 4)</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/data.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body data-page="connect">
+
+  <!-- SITE HEADER -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="ROTA EXPOSED home">
+        <span class="brand-mark">R</span>
+        <span>
+          <strong class="brand-name">ROTA EXPOSED</strong>
+          <small class="brand-subtitle">UNFILTERED SIDE OF ROTARACT</small>
+        </span>
+      </a>
+
+      <div class="discovery-status" aria-label="Discovery progress">
+        <span>DISCOVERY</span>
+        <div class="progress-dots" data-progress-dots></div>
+        <b data-progress-count>4 / 4</b>
+      </div>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links">
+        <a href="index.html">Discover</a>
+        <a href="what-we-do.html">Impact</a>
+        <a href="our-club.html">People</a>
+        <a href="connect.html" aria-current="page">Connect</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO: YOUR TURN -->
+    <section class="section container">
+      <span class="sticker-badge yellow">CONNECT / YOUR TURN</span>
+      <h1 class="section-heading" style="margin-top: 16px;">ENOUGH ABOUT US.<br><span>YOUR TURN.</span></h1>
+      <p class="hero-copy">If you could change ONE thing around you... what would it be?</p>
+    </section>
+
+    <!-- SECTION 01: ONE-THING CHALLENGE SUBMISSION -->
+    <section class="section container">
+      <div class="idea-card">
+        <span class="sticker-badge orange">01 / ONE-THING CHALLENGE</span>
+        <form class="idea-form" style="margin-top: 20px;">
+          <label for="community-idea">“IF I COULD CHANGE ONE THING AROUND ME, I WOULD...”</label>
+          <textarea id="community-idea" name="idea" placeholder="Write one sentence about a problem, a need, or a project idea..." required></textarea>
+          <button class="primary-btn pulse-btn" type="submit" style="margin-top: 16px;">
+            MAKE IT COUNT <span aria-hidden="true">→</span>
+          </button>
+        </form>
+
+        <div class="idea-success-modal" aria-live="polite" hidden>
+          <span class="sticker-badge lime" style="color: var(--text-dark);">IDEA RECEIVED</span>
+          <h3 style="margin-top: 10px;">THAT’S HOW EVERY PROJECT STARTS.</h3>
+          <p style="font-size: 1.1rem; margin-top: 6px;">
+            One person noticing something. One person asking: <em>“What if?”</em>
+          </p>
+          <p style="font-weight: 800; margin-top: 12px; text-transform: uppercase;">
+            💡 YOUR IDEA COULD BECOME OUR NEXT CAMPUS PROJECT!
+          </p>
+          <a class="primary-btn" href="https://rota-exposed.pages.dev/" target="_blank" rel="noopener" style="margin-top: 16px; background: var(--text-dark); color: white;">FILL OFFICIAL GOOGLE FORM <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02: ROTARACT ACTION WHEEL -->
+    <section class="section container">
+      <div class="wheel-section">
+        <div>
+          <span class="sticker-badge blue">02 / INTERACTIVE WHEEL</span>
+          <h2 class="section-heading" style="margin-top: 14px;">WHAT’S YOUR<br><span>NEXT MOVE?</span></h2>
+          <p class="mag-caption" style="margin-bottom: 24px;">Spin the wheel to unlock your random daily Rotaract micro-action.</p>
+          
+          <button class="primary-btn" type="button" data-spin-wheel>
+            SPIN THE WHEEL <span aria-hidden="true">↻</span>
+          </button>
+
+          <div data-wheel-result hidden></div>
+        </div>
+
+        <div class="wheel-wrapper">
+          <div class="wheel-pointer"></div>
+          <div class="wheel" data-wheel aria-label="Rotaract Action Wheel">
+            <span class="wheel-label label-orange">SERVE</span>
+            <span class="wheel-label label-blue">LEARN</span>
+            <span class="wheel-label label-lime">CONNECT</span>
+            <span class="wheel-label label-yellow">CREATE</span>
+            <div class="wheel-center"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DISCOVERY COMPLETE CELEBRATION -->
+    <section class="section container" data-complete hidden>
+      <div style="background: var(--accent-lime); border: var(--border-editorial); border-radius: 28px; padding: 48px; text-align: center; box-shadow: var(--shadow-editorial-lg);">
+        <span class="sticker-badge orange">ALL FOUR SIDES UNLOCKED ✓</span>
+        <h2 class="section-heading" style="margin-top: 16px; font-size: 3.5rem;">YOU DISCOVERED<br><span>ROTARACT!</span></h2>
+        <p style="font-weight: 800; letter-spacing: 0.1em; font-size: 1.2rem; margin-top: 12px;">
+          ✓ DISCOVER &nbsp; • &nbsp; ✓ IMPACT &nbsp; • &nbsp; ✓ PEOPLE &nbsp; • &nbsp; ✓ CONNECT
+        </p>
+        <p class="mag-caption" style="margin-top: 10px; font-size: 0.95rem;">Not bad for scanning a QR code.</p>
+      </div>
+    </section>
+
+    <!-- ACTION CARDS GRID -->
+    <section class="section container">
+      <div class="section-label">NOW MAKE IT REAL</div>
+      <h2 class="section-heading" style="font-size: 2.4rem;">TAKE YOUR<br><span>NEXT STEP.</span></h2>
+
+      <div class="action-grid">
+        <div class="action-card">
+          <span class="step-num">01</span>
+          <div>
+            <h3>SHARE AN IDEA</h3>
+            <p style="font-size: 0.9rem; margin-top: 4px;">Start a conversation with our project leads.</p>
+          </div>
+          <a class="secondary-btn" href="https://rota-exposed.pages.dev/" target="_blank" rel="noopener" style="margin-top: 16px; font-size: 0.8rem; padding: 10px 16px;">SUBMIT IDEA <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="action-card">
+          <span class="step-num">02</span>
+          <div>
+            <h3>COLLABORATE</h3>
+            <p style="font-size: 0.9rem; margin-top: 4px;">Partner with us on campus or club events.</p>
+          </div>
+          <a class="secondary-btn" href="https://rota-exposed.pages.dev/" target="_blank" rel="noopener" style="margin-top: 16px; font-size: 0.8rem; padding: 10px 16px;">PARTNER UP <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="action-card">
+          <span class="step-num">03</span>
+          <div>
+            <h3>JOIN / VOLUNTEER</h3>
+            <p style="font-size: 0.9rem; margin-top: 4px;">Put your energy somewhere useful.</p>
+          </div>
+          <a class="secondary-btn" href="https://rota-exposed.pages.dev/" target="_blank" rel="noopener" style="margin-top: 16px; font-size: 0.8rem; padding: 10px 16px;">REGISTER NOW <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="action-card">
+          <span class="step-num">04</span>
+          <div>
+            <h3>FOLLOW US</h3>
+            <p style="font-size: 0.9rem; margin-top: 4px;">Keep discovering stories on Instagram.</p>
+          </div>
+          <a class="secondary-btn" href="https://www.instagram.com/rotaractsiet/" target="_blank" rel="noopener" style="margin-top: 16px; font-size: 0.8rem; padding: 10px 16px;">@rotaractsiet</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOSING BANNER -->
+    <section class="closing-banner">
+      <div class="container">
+        <h2>SCAN.<br>DISCOVER.<br>CONNECT.</h2>
+        <p style="font-size: 1.3rem; font-weight: 700; margin-top: 14px;">What will you do with what you discovered?</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <strong class="brand-name">ROTA EXPOSED</strong>
+      <p>Rotaract Club of Sri Shakthi Institute of Engineering and Technology, Coimbatore</p>
+    </div>
+  </footer>
+
+</body>
+</html>

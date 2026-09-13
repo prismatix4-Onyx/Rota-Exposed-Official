@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#141414">
+  <meta name="description" content="ROTA EXPOSED: The Unfiltered Side of Rotaract by Rotaract SIET Coimbatore.">
+  <title>ROTA EXPOSED | Unfiltered Side of Rotaract (Side 1)</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/data.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body data-page="home">
+
+  <!-- SITE HEADER -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="ROTA EXPOSED home">
+        <span class="brand-mark">R</span>
+        <span>
+          <strong class="brand-name">ROTA EXPOSED</strong>
+          <small class="brand-subtitle">UNFILTERED SIDE OF ROTARACT</small>
+        </span>
+      </a>
+
+      <!-- Progress Tracker Bar -->
+      <div class="discovery-status" aria-label="Discovery progress">
+        <span>DISCOVERY</span>
+        <div class="progress-dots" data-progress-dots></div>
+        <b data-progress-count>1 / 4</b>
+      </div>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links">
+        <a href="index.html" aria-current="page">Discover</a>
+        <a href="what-we-do.html">Impact</a>
+        <a href="our-club.html">People</a>
+        <a href="connect.html">Connect</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO: EDITORIAL COVER STORY -->
+    <section class="section hero-home container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="sticker-badge blue">ISSUE #01 • COVER STORY</span>
+          <h1>YOU JUST<br><em>DISCOVERED</em><br>ROTARACT.</h1>
+          <p class="hero-copy">
+            A digital magazine that secretly behaves like a mini-game. 
+            Before we show you what we build... let’s see what you’re like.
+          </p>
+          <a class="primary-btn pulse-btn" href="#choose">START DISCOVERY <span aria-hidden="true">↓</span></a>
+          <p class="mag-caption" style="margin-top: 20px;">📍 Scanned at Race Course, Coimbatore</p>
+        </div>
+
+        <div class="hero-image-frame">
+          <img src="images/hero.png" alt="Rotaract club students working together">
+          <div class="hero-image-badge">FIG 01. ROTARACT TEAM</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 01: PICK YOUR MOVE -->
+    <section id="choose" class="section container">
+      <div class="section-label">01 / PICK YOUR MOVE</div>
+      <h2 class="section-heading">WHAT BRINGS<br><span>YOU HERE?</span></h2>
+      <p class="mag-caption">Tap a card to unlock your starting perspective.</p>
+
+      <div class="choice-grid">
+        <button class="choice-card" type="button" data-choice="help">
+          <span class="num">01</span>
+          <strong>I WANT TO HELP</strong>
+          <small>Make something better right where you are.</small>
+        </button>
+
+        <button class="choice-card" type="button" data-choice="grow">
+          <span class="num">02</span>
+          <strong>I WANT TO GROW</strong>
+          <small>Learn leadership by planning & executing.</small>
+        </button>
+
+        <button class="choice-card" type="button" data-choice="connect">
+          <span class="num">03</span>
+          <strong>I WANT TO CONNECT</strong>
+          <small>Find ambitious peers & global networks.</small>
+        </button>
+
+        <button class="choice-card" type="button" data-choice="idea">
+          <span class="num">04</span>
+          <strong>I HAVE AN IDEA</strong>
+          <small>Start with a question and build momentum.</small>
+        </button>
+      </div>
+
+      <div class="choice-result" aria-live="polite" hidden></div>
+    </section>
+
+    <!-- SECTION 02: INTERACTIVE SCENARIO ENGINE -->
+    <section class="section container">
+      <div class="scenario-box">
+        <span class="sticker-badge orange">02 / INTERACTIVE SCENARIO</span>
+        <h2>YOU NOTICE A PROBLEM<br><span>AROUND YOUR COMMUNITY.</span></h2>
+        <p style="color: #D1D5DB; font-size: 1.1rem; margin-top: 10px;">What happens next?</p>
+
+        <div class="scenario-options">
+          <button type="button" class="scenario-btn" data-response-title="YOU SAW IT." data-response-msg="Noticing is the beginning. Stay curious about what happens next.">
+            A. <b>IGNORE IT.</b>
+          </button>
+          <button type="button" class="scenario-btn" data-response-title="TALK ABOUT IT." data-response-msg="Conversations spark ideas. Next step is finding people to act.">
+            B. <b>TALK ABOUT IT.</b>
+          </button>
+          <button type="button" class="scenario-btn" data-response-title="THAT'S THE ROTARACT SPIRIT!" data-response-msg="SERVICE starts when someone decides: 'Someone should do something.' Then becomes that someone.">
+            C. <b>FIND PEOPLE AND DO SOMETHING.</b>
+          </button>
+          <button type="button" class="scenario-btn" data-response-title="WAITING IS A CHOICE." data-response-msg="So is starting small. Even small projects create ripples.">
+            D. <b>WAIT FOR SOMEONE ELSE.</b>
+          </button>
+        </div>
+
+        <div class="scenario-response" aria-live="polite" hidden></div>
+      </div>
+    </section>
+
+    <!-- SECTION 03: TURN THE PAGE -->
+    <section class="section container">
+      <div style="background: var(--bg-paper); border: var(--border-editorial); border-radius: 28px; padding: 40px; text-align: center; box-shadow: var(--shadow-editorial);">
+        <span class="sticker-badge lime">DISCOVER — COMPLETE</span>
+        <h2 class="section-heading" style="margin-top: 16px;">SEE WHAT WE<br><span>ACTUALLY DO.</span></h2>
+        <a class="primary-btn" href="what-we-do.html">SEE OUR IMPACT → <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <strong class="brand-name">ROTA EXPOSED</strong>
+      <p>Rotaract Club of Sri Shakthi Institute of Engineering and Technology, Coimbatore</p>
+    </div>
+  </footer>
+
+</body>
+</html>
